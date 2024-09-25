@@ -28,7 +28,7 @@ By following the steps below, you can generate a dataset that encompasses variou
 1. save 16k related data
 
     ```bash
-    python data-preprocess/1_save_rel_16k.py \
+    python3 data-preprocess/1_save_rel_16k.py \
       --output_file "./datasets/your-rel-16k-data-path"
     ```
 
@@ -36,7 +36,7 @@ By following the steps below, you can generate a dataset that encompasses variou
 
     - If both storing to vectorDB and retrieval needed, run the file with the folllowing command
     ```bash
-    python data-preprocess/2_save_unrel_16k.py \
+    python3 data-preprocess/2_save_unrel_16k.py \
       --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
       --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
       --save_to_vectordb=True
@@ -44,7 +44,7 @@ By following the steps below, you can generate a dataset that encompasses variou
 
     - If only retireval needed, run the file with the folllowing command
     ```bash
-    python data-preprocess/2_save_unrel_16k.py \
+    python3 data-preprocess/2_save_unrel_16k.py \
       --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
       --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
       --save_to_vectordb=False
@@ -53,7 +53,7 @@ By following the steps below, you can generate a dataset that encompasses variou
 3. save 16k mixed data
 
     ```bash
-    python data-preprocess/3_save_mixed_16k.py \
+    python3 data-preprocess/3_save_mixed_16k.py \
       --rel_data_path "./datasets/your-rel-16k-data-path" \
       --unrel_data_path "./datasets/your-unrel-16k-data-path" \
       --mixed_data_path "./datasets/your-mixed-16k-data-path"
@@ -62,7 +62,7 @@ By following the steps below, you can generate a dataset that encompasses variou
 4. save 8k, 4k related, unrelated data
 
     ```bash
-    python data-preprocess/4_save_rel_unrel_8k_4k.py \
+    python3 data-preprocess/4_save_rel_unrel_8k_4k.py \
       --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
       --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
       --rel_8k_data_path "./datasets/your-rel-8k-data-path" \
@@ -76,7 +76,7 @@ By following the steps below, you can generate a dataset that encompasses variou
     - For 8k mixed data, run the file with the folllowing command
 
     ```bash
-    python data-preprocess/5_save_mixed_8k_4k.py \
+    python3 data-preprocess/5_save_mixed_8k_4k.py \
       --rel_data_path "./datasets/your-rel-8k-data-path" \
       --unrel_data_path "./datasets/your-unrel-8k-data-path" \
       --mixed_data_path "./datasets/your-mixed-8k-data-path"
@@ -85,7 +85,7 @@ By following the steps below, you can generate a dataset that encompasses variou
     - For 4k mixed data, run the file with the folllowing command
 
     ```bash
-    python data-preprocess/5_save_mixed_8k_4k.py \
+    python3 data-preprocess/5_save_mixed_8k_4k.py \
       --rel_data_path "./datasets/your-rel-4k-data-path" \
       --unrel_data_path "./datasets/your-unrel-4k-data-path" \
       --mixed_data_path "./datasets/your-mixed-4k-data-path"
