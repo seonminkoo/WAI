@@ -141,7 +141,7 @@ def save_8k_4k(
 
 
 if __name__ == "__main__":
-    # fire.Fire(save_8k_4k)
+    fire.Fire(save_8k_4k)
 
     # run the file with the folllowing command
     # python 3_save_rel_unrel_8k_4k.py \
@@ -151,14 +151,3 @@ if __name__ == "__main__":
     #   --unrel_data_8k_path "unrel_8k_path" \
     #   --rel_data_4k_path "rel_4k_path" \
     #   --unrel_data_4k_path "unrel_4k_path"
-
-    """
-    우리의 경우, 
-    python 3_save_rel_unrel_8k_4k.py \
-        --rel_data_16k_path "/data/yjoonjang/datasets/long_context/16k_rel.json" \
-        --unrel_data_16k_path "/data/yjoonjang/datasets/long_context/16k_unrel.json" \
-        --rel_data_8k_path "{저장할 8k_rel path}" \
-        --unrel_data_8k_path "{저장할 8k_unrel path}" \
-        --rel_data_4k_path "{저장할 4k_rel path}" \
-        --unrel_data_4k_path "{저장할 4k_unrel path}"
-    """

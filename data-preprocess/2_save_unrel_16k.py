@@ -102,25 +102,9 @@ if __name__ == "__main__":
     #   --rel_data_16k_path "{rel_data_path}" \
     #   --unrel_data_16k_path "{unrel_data_path}" \
     #   --save_to_vectordb=False
-
-    """
-    우리의 경우, 
-    python 1_save_unrel.py \
-        --rel_data_16k_path "/data/yjoonjang/datasets/long_context/16k_rel.json" \
-        --unrel_data_16k_path "{저장할 16k_unrel path}" \
-        --save_to_vectordb=False
-    """
     
     # 2. if storing to vectorDB and retrieval needed, run the file with the folllowing command
     # python 1_save_unrel.py \
     #   --rel_data_16k_path "{rel_data_path}" \
     #   --unrel_data_16k_path "{unrel_data_path}" \
     #   --save_to_vectordb=True
-
-    """
-    우리의 경우, 
-    python 1_save_unrel.py \
-        --rel_data_16k_path "/data/yjoonjang/datasets/long_context/16k_rel.json" \
-        --unrel_data_16k_path "{저장할 16k_unrel path}" \
-        --save_to_vectordb=True
-    """

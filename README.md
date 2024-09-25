@@ -23,7 +23,73 @@ $ pip install -r requirements.txt
 
 #### Surrounding Context Construction
 
-First, by following the steps below, you can generate a dataset that encompasses various semantic and structural compositions of the context.
+By following the steps below, you can generate a dataset that encompasses various semantic and structural compositions of the context.
+
+1. save 16k related data
+
+    ```bash
+    python data-preprocess/1_save_rel_16k.py \
+      --output_file "./datasets/your-rel-16k-data-path"
+    ```
+
+2. save 16k unrel data
+
+    - If both storing to vectorDB and retrieval needed, run the file with the folllowing command
+    ```bash
+    python data-preprocess/2_save_unrel_16k.py \
+      --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
+      --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
+      --save_to_vectordb=True
+    ```
+
+    - If only retireval needed, run the file with the folllowing command
+    ```bash
+    python data-preprocess/2_save_unrel_16k.py \
+      --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
+      --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
+      --save_to_vectordb=False
+    ```
+
+3. save 16k mixed data
+
+    ```bash
+    python data-preprocess/3_save_mixed_16k.py \
+      --rel_data_path "./datasets/your-rel-16k-data-path" \
+      --unrel_data_path "./datasets/your-unrel-16k-data-path" \
+      --mixed_data_path "./datasets/your-mixed-16k-data-path"
+    ```
+
+4. save 8k, 4k related, unrelated data
+
+    ```bash
+    python data-preprocess/4_save_rel_unrel_8k_4k.py \
+      --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
+      --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
+      --rel_8k_data_path "./datasets/your-rel-8k-data-path" \
+      --unrel_8k_data_path "./datasets/your-unrel-8k-data-path" \
+      --rel_4k_data_path "./datasets/your-rel-4k-data-path" \
+      --unrel_4k_data_path "./datasets/your-unrel-4k-data-path"
+    ```
+
+5. save 8k, 4k mixed data
+
+    - For 8k mixed data, run the file with the folllowing command
+
+    ```bash
+    python data-preprocess/5_save_mixed_8k_4k.py \
+      --rel_data_path "./datasets/your-rel-8k-data-path" \
+      --unrel_data_path "./datasets/your-unrel-8k-data-path" \
+      --mixed_data_path "./datasets/your-mixed-8k-data-path"
+    ```
+
+    - For 4k mixed data, run the file with the folllowing command
+
+    ```bash
+    python data-preprocess/5_save_mixed_8k_4k.py \
+      --rel_data_path "./datasets/your-rel-4k-data-path" \
+      --unrel_data_path "./datasets/your-unrel-4k-data-path" \
+      --mixed_data_path "./datasets/your-mixed-4k-data-path"
+    ```
 
 #### Verify the task alignment of LLMs
 

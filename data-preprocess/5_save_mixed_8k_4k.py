@@ -80,16 +80,14 @@ def save_mixed(rel_data_path, unrel_data_path, mixed_data_path, random_seed=42):
 if __name__ == "__main__":
     fire.Fire(save_mixed)
 
-    # run the file with the folllowing command
-    # python 2_save_mixed_16k.py \
-    #   --rel_data_path "{rel_16k_data_path}" \
-    #   --unrel_data_path "{unrel_16k_data_path}" \
-    #   --mixed_data_path "{path_to_store_16k_mixed_data}"
+    # For 8k_mixed, run the file with the folllowing command
+    # python 4_save_mixed_8k_4k.py \
+    #   --rel_data_path "{rel_8k_data_path}" \
+    #   --unrel_data_path "{unrel_8k_data_path}" \
+    #   --mixed_data_path "{path_to_store_8k_mixed_data}"
 
-    """
-    우리의 경우, 
-    python  2_save_mixed_16k.py \
-        --rel_data_path "/data/yjoonjang/datasets/long_context/16k_rel.json" \
-        --unrel_data_path "/data/yjoonjang/datasets/long_context/16k_unrel.json" \
-        --mixed_data_path "{저장할 16k_mixed path}"
-    """
+    # For 4k_mixed, run the file with the folllowing command
+    # python 4_save_mixed_8k_4k.py \
+    #   --rel_data_path "{rel_4k_data_path}" \
+    #   --unrel_data_path "{unrel_4k_data_path}" \
+    #   --mixed_data_path "{path_to_store_4k_mixed_data}"
