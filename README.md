@@ -25,32 +25,34 @@ $ pip install -r requirements.txt
 
 By following the steps below, you can generate a dataset that encompasses various semantic and structural compositions of the context.
 
-1. save 16k related data
+1. Add your `OPENAI_API_KEY` and `PINECONE_API_KEY` to the `.env` file by referring to the `.env.template`.
+
+2. Save 16k related data
 
     ```bash
     python3 data-preprocess/1_save_rel_16k.py \
       --output_file "./datasets/your-rel-16k-data-path"
     ```
 
-2. save 16k unrel data
+3. Save 16k unrel data
 
     - If both storing to vectorDB and retrieval needed, run the file with the folllowing command
-    ```bash
-    python3 data-preprocess/2_save_unrel_16k.py \
-      --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
-      --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
-      --save_to_vectordb=True
-    ```
+      ```bash
+      python3 data-preprocess/2_save_unrel_16k.py \
+        --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
+        --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
+        --save_to_vectordb=True
+      ```
 
     - If only retireval needed, run the file with the folllowing command
-    ```bash
-    python3 data-preprocess/2_save_unrel_16k.py \
-      --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
-      --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
-      --save_to_vectordb=False
-    ```
+      ```bash
+      python3 data-preprocess/2_save_unrel_16k.py \
+        --rel_data_16k_path "./datasets/your-rel-16k-data-path" \
+        --unrel_data_16k_path "./datasets/your-unrel-16k-data-path" \
+        --save_to_vectordb=False
+      ```
 
-3. save 16k mixed data
+4. Save 16k mixed data
 
     ```bash
     python3 data-preprocess/3_save_mixed_16k.py \
@@ -59,7 +61,7 @@ By following the steps below, you can generate a dataset that encompasses variou
       --mixed_data_path "./datasets/your-mixed-16k-data-path"
     ```
 
-4. save 8k, 4k related, unrelated data
+5. Save (8k, 4k) (related, unrelated) data
 
     ```bash
     python3 data-preprocess/4_save_rel_unrel_8k_4k.py \
@@ -71,25 +73,25 @@ By following the steps below, you can generate a dataset that encompasses variou
       --unrel_4k_data_path "./datasets/your-unrel-4k-data-path"
     ```
 
-5. save 8k, 4k mixed data
+6. Save 8k, 4k mixed data
 
     - For 8k mixed data, run the file with the folllowing command
 
-    ```bash
-    python3 data-preprocess/5_save_mixed_8k_4k.py \
-      --rel_data_path "./datasets/your-rel-8k-data-path" \
-      --unrel_data_path "./datasets/your-unrel-8k-data-path" \
-      --mixed_data_path "./datasets/your-mixed-8k-data-path"
-    ```
+      ```bash
+      python3 data-preprocess/5_save_mixed_8k_4k.py \
+        --rel_data_path "./datasets/your-rel-8k-data-path" \
+        --unrel_data_path "./datasets/your-unrel-8k-data-path" \
+        --mixed_data_path "./datasets/your-mixed-8k-data-path"
+      ```
 
     - For 4k mixed data, run the file with the folllowing command
 
-    ```bash
-    python3 data-preprocess/5_save_mixed_8k_4k.py \
-      --rel_data_path "./datasets/your-rel-4k-data-path" \
-      --unrel_data_path "./datasets/your-unrel-4k-data-path" \
-      --mixed_data_path "./datasets/your-mixed-4k-data-path"
-    ```
+      ```bash
+      python3 data-preprocess/5_save_mixed_8k_4k.py \
+        --rel_data_path "./datasets/your-rel-4k-data-path" \
+        --unrel_data_path "./datasets/your-unrel-4k-data-path" \
+        --mixed_data_path "./datasets/your-mixed-4k-data-path"
+      ```
 
 #### Verify the task alignment of LLMs
 
@@ -116,7 +118,9 @@ CUDA_VISIBLE_DEVICES=6 python3 main.py \
 ```
 #### Evaluation
 ```bash
-python eval/evaluation.py 
+python3 eval/evaluate.py \
+  --input_file "./results/${MODEL}/${PROPMT_TYPE}/${CTX_SIZE}k_${DATA_TYPE}-${DOC_SET}_res.csv" \
+  --output_file ".eval/results/${MODEL}/${PROPMT_TYPE}/${CTX_SIZE}k_${DATA_TYPE}-${DOC_SET}_evaluated.csv"
 ```
 
 
