@@ -120,7 +120,7 @@ CUDA_VISIBLE_DEVICES=6 python3 main.py \
 ```bash
 python3 eval/evaluate.py \
   --input_file "./results/${MODEL}/${PROPMT_TYPE}/${CTX_SIZE}k_${DATA_TYPE}-${DOC_SET}_res.csv" \
-  --output_file ".eval/results/${MODEL}/${PROPMT_TYPE}/${CTX_SIZE}k_${DATA_TYPE}-${DOC_SET}_evaluated.csv"
+  --output_file "./results/eval/${MODEL}/${PROPMT_TYPE}/${CTX_SIZE}k_${DATA_TYPE}-${DOC_SET}_evaluated.csv"
 ```
 
 
