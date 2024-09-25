@@ -1,0 +1,21 @@
+{% block prompt %}
+Generate an answer (A) to the question (Q) based on the given context.
+Also, provide the evidence paragraph number (Evidence num) that supports your answer.
+
+An example of performing a task is as follows:
+Context: '[0] Dichlorine heptoxide is the chemical compound with the formula Cl O . This chlorine oxide is the anhydride of perchloric acid . It is produced by the careful distillation of perchloric acid in the presence of the dehydrating agent phosphorus pentoxide : [1] It may also be formed by illumination on mixtures of chlorine and ozone . It slowly hydrolyzes back to perchloric acid , which is also hazardous when anhydrous . [2] The chlorine ( VII ) oxide can be distilled off from the mixture . [3] Cl O is bent with Cl − O − Cl angle of 118.6 ° giving the molecule C symmetry . The terminal Cl − O distances are 1.709 Å and the Cl =O distances are 1.405 Å . In this compound , chlorine exists in its highest formal oxidation state of + 7 , although the bonding in this molecule is significantly covalent . [4] Dichlorine heptoxide reacts with primary and secondary amines in carbon tetrachloride solution to yield N - perchloryls : [5] It also reacts with alkenes to give alkyl perchlorates . For example , it reacts with propene in carbon tetrachloride solution to yield isopropyl perchlorate and 1 - chloro - 2 - propyl perchlorate . [6] Dichlorine heptoxide is a strongly acidic oxide , and in solution it forms an equilibrium with perchloric acid . [7] Cl O is an endothermic molecule , meaning it is intrinsically unstable . [8] Although it is the most stable chlorine oxide , Cl O is a strong oxidizer as well as an explosive that can be set off with flame or mechanical shock , or by contact with iodine . Nevertheless , it is less strongly oxidising than the other chlorine oxides , and does not attack sulfur , phosphorus , or paper when cold . It has the same effects on the human body as elemental chlorine , and requires the same precautions . '
+# Q: what is the oxidation state of cl in cl2o7
+# A: + 7
+# Evidence num: 3
+
+------
+
+Please respond according to the format below.
+Context: {{context}}
+
+------
+# Q: {{question}}
+# A:
+# Evidence num:
+{% endblock %}
+

@@ -1,0 +1,13 @@
+{% block prompt %}
+Context: {{context}}
+
+------
+Generate an answer (A) to the question (Q) based on the given context.
+Also, provide the evidence paragraph number (Evidence num) that supports your answer.
+Please respond according to the format below.
+
+# Q: {{question}}
+# A:
+# Evidence num:
+{% endblock %}
+

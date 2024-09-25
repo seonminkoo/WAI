@@ -1,0 +1,160 @@
+absl-py==2.1.0
+accelerate @ git+https://github.com/huggingface/accelerate.git@65544d8fe9db999fe9e3d6453f10d20f081b3b96
+aiohttp==3.9.1
+aiosignal==1.3.1
+annotated-types==0.6.0
+anthropic==0.26.1
+anyio==4.2.0
+appdirs==1.4.4
+args==0.1.0
+asttokens==2.4.1
+async-timeout==4.0.3
+attrs==23.2.0
+bitsandbytes==0.42.0
+Brotli @ file:///tmp/abs_ecyw11_7ze/croots/recipe/brotli-split_1659616059936/work
+cachetools==5.3.2
+certifi @ file:///croot/certifi_1700501669400/work/certifi
+cffi @ file:///croot/cffi_1700254295673/work
+chardet==5.2.0
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.1.7
+clovax==0.1.1
+colorama==0.4.6
+cryptography @ file:///croot/cryptography_1702070282333/work
+DataProperty==1.0.1
+datasets==2.16.1
+decorator==5.1.1
+dill==0.3.7
+distro==1.9.0
+docker-pycreds==0.4.0
+evaluate==0.4.1
+exceptiongroup==1.2.0
+executing==2.0.1
+fairscale==0.4.13
+filelock @ file:///croot/filelock_1700591183607/work
+fire==0.5.0
+frozenlist==1.4.1
+fsspec==2023.10.0
+gitdb==4.0.11
+GitPython==3.1.43
+gmpy2 @ file:///tmp/build/80754af9/gmpy2_1645438755360/work
+google-ai-generativelanguage==0.4.0
+google-api-core==2.15.0
+google-auth==2.26.2
+google-generativeai==0.3.2
+googleapis-common-protos==1.62.0
+grpcio==1.60.0
+grpcio-status==1.60.0
+h11==0.14.0
+httpcore==1.0.2
+httpx==0.26.0
+huggingface-hub==0.20.2
+idna @ file:///croot/idna_1666125576474/work
+importlib-metadata==7.0.1
+ipython==8.18.1
+jedi==0.19.1
+Jinja2 @ file:///croot/jinja2_1666908132255/work
+jiter==0.4.0
+joblib==1.3.2
+jsonlines==4.0.0
+# Editable install with no version control (llama==0.0.0)
+-e /home/koo/Projects/LLM/ref/LLaMA-Adapter
+llamaapi==0.1.36
+# Editable install with no version control (lm_eval==0.4.1)
+-e /home/koo/Projects/lm-evaluation-harness
+lxml==5.1.0
+Markdown==3.5.2
+MarkupSafe @ file:///croot/markupsafe_1704205993651/work
+matplotlib-inline==0.1.6
+mbstrdecoder==1.1.3
+mkl-fft @ file:///croot/mkl_fft_1695058164594/work
+mkl-random @ file:///croot/mkl_random_1695059800811/work
+mkl-service==2.4.0
+more-itertools==10.2.0
+mpmath @ file:///croot/mpmath_1690848262763/work
+multidict==6.0.4
+multiprocess==0.70.15
+nest-asyncio==1.6.0
+networkx @ file:///croot/networkx_1690561992265/work
+nltk==3.8.1
+numexpr==2.9.0
+numpy @ file:///croot/numpy_and_numpy_base_1704311704800/work/dist/numpy-1.26.3-cp39-cp39-linux_x86_64.whl#sha256=93e7b9e5e2090dd03810e7c1b02cb077d3ef49fc713f0af531e0667375d9decb
+openai==0.28.0
+packaging==23.2
+pandas==2.1.4
+parso==0.8.3
+pathvalidate==3.2.0
+peft @ git+https://github.com/huggingface/peft.git@9119b780ebac7859db5753ebad50d94ba803c99c
+pexpect==4.9.0
+Pillow @ file:///croot/pillow_1696580024257/work
+portalocker==2.8.2
+prompt-toolkit==3.0.43
+proto-plus==1.23.0
+protobuf==4.25.2
+psutil==5.9.8
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pyarrow==14.0.2
+pyarrow-hotfix==0.6
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pybind11==2.11.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydantic==1.10.13
+pydantic_core==2.14.6
+pydash==7.0.6
+Pygments==2.17.2
+pyOpenSSL @ file:///croot/pyopenssl_1690223430423/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+pytablewriter==1.2.0
+python-dateutil==2.8.2
+python-dotenv==1.0.1
+pytz==2023.3.post1
+PyYAML @ file:///croot/pyyaml_1698096049011/work
+regex==2023.12.25
+requests @ file:///croot/requests_1690400202158/work
+responses==0.18.0
+rouge-score==0.1.2
+rsa==4.9
+sacrebleu==2.4.0
+sacremoses==0.1.1
+safetensors==0.4.1
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+sentencepiece==0.2.0
+sentry-sdk==1.44.0
+setproctitle==1.3.3
+six==1.16.0
+smmap==5.0.1
+sniffio==1.3.0
+sqlitedict==2.1.0
+stack-data==0.6.3
+sympy @ file:///croot/sympy_1701397643339/work
+tabledata==1.3.3
+tabulate==0.9.0
+tcolorpy==0.1.4
+tensorboard==2.16.2
+tensorboard-data-server==0.7.2
+termcolor==2.4.0
+threadpoolctl==3.3.0
+timm==0.9.16
+tokenizers==0.15.0
+torch==2.1.0
+torchvision==0.16.0
+tqdm==4.66.1
+tqdm-multiprocess==0.0.11
+traitlets==5.14.1
+transformers @ git+https://github.com/huggingface/transformers.git@831bc25d8fdb85768402f772cf65cc3d7872b211
+triton==2.1.0
+typepy==1.3.2
+typing_extensions @ file:///croot/typing_extensions_1705005625920/work
+tzdata==2023.4
+urllib3 @ file:///croot/urllib3_1698257533958/work
+wandb==0.16.5
+wcwidth==0.2.13
+Werkzeug==3.0.1
+word2number==1.1
+xxhash==3.4.1
+yarl==1.9.4
+zipp==3.17.0
+zstandard==0.22.0
